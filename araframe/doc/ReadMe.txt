@@ -4,7 +4,7 @@ FrameLib引用第三方库介绍:
 2,retrofit   Retrofit和Java领域的ORM概念类似， ORM把结构化数据转换为Java对象，
     而Retrofit 把REST API返回的数据转化为Java对象方便操作。同时还封装了网络代码的调用。
 3,ActiveAndroid算是一个轻量级的ORM框架,简单地通过如save()和delete()等方法来做到增删改查等操作。
-4,otto EventBus 针对事件提供统一订阅，发布以达到组件间通信的解决方案。
+//4,otto EventBus 针对事件提供统一订阅，发布以达到组件间通信的解决方案。
 5,AndroidAnnotations Android Annotations 是一个开源的框架，用于加速 Android 应用的开发，可以让你把重点放在功能的实现上，简化了代码，提升了可维护性.
 6,Picasso A powerful image downloading and caching library for Android
 
