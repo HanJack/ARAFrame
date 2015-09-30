@@ -1,0 +1,9 @@
+package:
+|------api 服务器端接口封装层
+|------common 公共模块
+    |--events EventBus（组件通讯层封装）
+    |--managers 系统应用管理类封装
+    |--util  工具类
+|------db 本地数据库定义封装
+|------modules Dagger Modules定义 负责为其它模块提供实例并且注入依赖关系
+|------ui 应用UI层

@@ -1,0 +1,13 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- 话题条目展示配置 -->
+    <dimen name="item_topic_wall_padding">7dp</dimen>
+    <dimen name="item_topic_author_head">48dp</dimen>
+
+    <!--TitleBar的高度-->
+    <dimen name="titlebar_main">48dp</dimen>
+
+    <dimen name="drawer_width">300dp</dimen>
+</resources>

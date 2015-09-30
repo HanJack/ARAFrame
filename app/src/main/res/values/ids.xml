@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 话题的显示的条目配置 -->
+    <item name="item_topic_author_head_wall" type="id" />
+    <item name="item_topic_author_head_lod_progressBar" type="id" />
+    <item name="item_topic_author_head" type="id" />
+    <item name="item_topic_title" type="id" />
+    <item name="item_topic_tab" type="id" />
+    <item name="item_topic_reply_ratio_visit_count" type="id" />
+    <item name="item_topic_create_at" type="id" />
+    <item name="item_topic_mark_icon" type="id" />
+
+    <!-- 回复 -->
+    <item name="detial_topic_replies" type="id" />
+    <!-- 加载进度条 -->
+    <item name="detial_topic_content_load_progress" type="id" />
+    <!-- 操作栏 -->
+    <item name="detial_topic_tool_bar_layout" type="id" />
+    <item name="detial_topic_tool_bar" type="id" />
+    <!-- 回复 的条目配置 -->
+    <item name="item_topic_reply_author_name" type="id"></item>
+    <item name="item_topic_reply_content" type="id"></item>
+    <item name="item_topic_reply_create_at" type="id"></item>
+</resources>

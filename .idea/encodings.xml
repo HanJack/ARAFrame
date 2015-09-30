@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/cliff/araframedemo/ui/welcome/Slide_First.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/cliff/araframedemo/ui/welcome/Slide_Fourth.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/cliff/araframedemo/ui/welcome/Slide_Second.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/cliff/araframedemo/ui/welcome/Slide_Third.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/cliff/araframedemo/ui/welcome/Welcome.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/cliff/araframedemo/ui/welcome/Welcome_Guide.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_logo.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/logo.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome_main.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_guide_intro.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_guide_intro2.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_guide_intro3.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_guide_intro4.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/res/drawable/indicator_dot_grey.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/res/drawable/indicator_dot_white.xml" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

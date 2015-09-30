@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tb_contextual"
+        app:showAsAction="always"
+        android:icon="@drawable/common_icon_qr"
+        android:title="@string/titlebar_main_scanning_label"/>
+
+</menu>

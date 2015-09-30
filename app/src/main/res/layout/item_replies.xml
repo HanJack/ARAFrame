@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_topic_content_select_bg">
+
+    <com.cliff.material.widget.RelativeLayout
+        android:id="@+id/rl_topic_item"
+        style="@style/Material.Drawable.Ripple.Wave.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_topic_content_select_bg"
+            android:paddingBottom="@dimen/item_topic_wall_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/item_topic_wall_padding">
+
+            <RelativeLayout
+                android:id="@id/item_topic_author_head_wall"
+                android:layout_width="@dimen/item_topic_author_head"
+                android:layout_height="@dimen/item_topic_author_head"
+                android:layout_marginRight="@dimen/item_topic_wall_padding">
+
+                <ProgressBar
+                    android:id="@id/item_topic_author_head_lod_progressBar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@id/item_topic_author_head"
+                    android:layout_width="@dimen/item_topic_author_head"
+                    android:layout_height="@dimen/item_topic_author_head" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/item_topic_reply_author_name"
+                style="@style/base_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/item_topic_reply_create_at"
+                android:layout_toRightOf="@id/item_topic_author_head_wall"
+                android:text="AuthorName"
+                android:textColor="@color/item_topic_author_head"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@id/item_topic_reply_create_at"
+                style="@style/base_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:text="2015-05-22"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_topic_reply_author_name"
+                android:layout_toRightOf="@id/item_topic_author_head_wall"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/item_topic_reply_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ReplyContent"
+                    android:textSize="12sp" />
+
+                <com.martin.ionichinabystudio.ui.view.ImageGroupView
+                    android:id="@+id/item_topic_reply_imgs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.cliff.material.widget.RelativeLayout>
+</RelativeLayout>

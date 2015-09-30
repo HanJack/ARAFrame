@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.cliff.material.widget.RelativeLayout
+        android:id="@+id/rl_topic_item"
+        style="@style/Material.Drawable.Ripple.Wave.Light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/item_topic_wall_padding"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/item_topic_wall_padding">
+
+            <RelativeLayout
+                android:id="@id/item_topic_author_head_wall"
+                android:layout_width="@dimen/item_topic_author_head"
+                android:layout_height="@dimen/item_topic_author_head"
+                android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                <ProgressBar
+                    android:id="@id/item_topic_author_head_lod_progressBar"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <ImageView
+                    android:id="@id/item_topic_author_head"
+                    android:layout_width="@dimen/item_topic_author_head"
+                    android:layout_height="@dimen/item_topic_author_head" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@id/item_topic_title"
+                style="@style/base_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/item_topic_author_head_wall"
+                android:text="Topic Title"
+                android:textColor="@color/item_topic_author_head"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/item_topic_author_head_wall"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/item_topic_author_head_wall"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@id/item_topic_tab"
+                        style="@style/item_topic_tab_gray"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/item_topic_content_tab_gray_bg"
+                        android:padding="1dp"
+                        android:text="全部"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@id/item_topic_reply_ratio_visit_count"
+                    style="@style/base_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="24/1421"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@id/item_topic_create_at"
+                    style="@style/base_text_style"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="2015-05-22"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.cliff.material.widget.RelativeLayout>
+
+    <ImageView
+        android:id="@id/item_topic_mark_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/top_icon"
+        android:visibility="invisible" />
+
+</RelativeLayout>
