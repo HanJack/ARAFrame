@@ -119,7 +119,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        mEmailView.setText("jack@geeboo.cn");
+        mEmailView.setText("jack@163.cn");
         mPasswordView.setText("aadfsdfdfs");
     }
 
