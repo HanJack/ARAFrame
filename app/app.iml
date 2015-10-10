@@ -106,8 +106,8 @@
     <orderEntry type="library" exported="" name="support-v4-23.0.0" level="project" />
     <orderEntry type="library" exported="" name="androidannotations-3.3.2" level="project" />
     <orderEntry type="library" exported="" name="okhttp-urlconnection-2.2.0" level="project" />
-    <orderEntry type="library" exported="" name="codemodel-2.6" level="project" />
     <orderEntry type="library" exported="" name="support-annotations-23.0.0" level="project" />
+    <orderEntry type="library" exported="" name="codemodel-2.6" level="project" />
     <orderEntry type="module" module-name="araframe" exported="" />
     <orderEntry type="module" module-name="material" exported="" />
     <orderEntry type="library" exported="" name="org.apache.http.legacy-android-23" level="project" />
