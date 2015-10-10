@@ -5,5 +5,6 @@ package:
     |--managers 系统应用管理类封装
     |--util  工具类
 |------db 本地数据库定义封装
-|------modules Dagger Modules定义 负责为其它模块提供实例并且注入依赖关系
+|------exception
 |------ui 应用UI层
+|------utils 工具类
