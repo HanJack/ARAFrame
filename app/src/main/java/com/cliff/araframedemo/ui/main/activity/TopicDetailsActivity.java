@@ -72,7 +72,7 @@ public class TopicDetailsActivity extends BaseActivity implements BaseView {
     @Click(R.id.button_bt_float_wave_color)
     public void openTopicReply() {
         Intent replyIntent = new Intent(this, RepliesActivity_.class);
-        replyIntent.putExtra(Config.TOPIC_ID, mTopic.getId());
+        replyIntent.putExtra(Config.TOPIC_ID, mTopic.getTpId());
         startActivity(replyIntent);
     }
 

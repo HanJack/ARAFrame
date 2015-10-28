@@ -12,6 +12,7 @@ import com.cliff.araframedemo.ui.main.activity.MainActivity;
 import com.cliff.araframedemo.ui.main.adapter.TopicListAdapter;
 import com.cliff.araframedemo.ui.main.view.BaseView;
 import com.cliff.hsj.api.ApiClient;
+import com.cliff.hsj.exception.HttpException;
 import com.cliff.hsj.ui.BaseFragment;
 import com.cliff.hsj.ui.widget.IRefreshLayout;
 import com.cliff.hsj.utils.LogUtils;
@@ -106,14 +107,10 @@ public class TopicsFragment extends BaseFragment implements
         showLoading();
         Call<TopicListResult> result = mTopicApi.getTopics(mTopicType, currentPage, 10, true);
         try {
-            Response<TopicListResult> res = result.execute();
-            if (res.body() == null) {
-                showError(res.raw().message());
-            } else {
-                setResult(res.body());
-            }
-        } catch (IOException e) {
+            setResult(ApiClient.instance().getData(result));
+        } catch (HttpException e) {
             hideLoading();
+            showError(e.getMessage());
         }
     }
 

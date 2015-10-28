@@ -34,6 +34,7 @@ import com.cliff.araframedemo.db.User;
 import com.cliff.araframedemo.ui.main.activity.MainActivity_;
 import com.cliff.hsj.api.ApiClient;
 import com.cliff.hsj.api.OkHttpClientManager;
+import com.cliff.hsj.exception.HttpException;
 import com.cliff.hsj.utils.LogUtils;
 import com.cliff.hsj.utils.ToastUtils;
 import com.squareup.okhttp.Request;
@@ -123,22 +124,21 @@ public class LoginActivity extends AppCompatActivity {
         mPasswordView.setText("aadfsdfdfs");
     }
 
+    /**
+     * 网络请求样例
+     */
     void loadTopic() {
         Call<TopicListResult> result = ApiClient.instance().loadService(TopicApi.class).getTopics("&#160;&#160;全部&#160;&#160;", 1, 10, true);
         try {
-            Response<TopicListResult> lists = result.execute();
-            TopicListResult res = lists.body();
-            if (res != null) {
-                printTopics(res.getData());
-            } else {
-                Log.i("TEST", lists.errorBody().string());
-            }
-        } catch (IOException ex) {
-
-            Log.e("TEST", "getTopic error");
+            printTopics(ApiClient.instance().getData(result).getData());
+        } catch (HttpException ex) {
+            Log.e("TEST", ex.getMessage());
         }
     }
 
+    /**
+     * 文件下载样例
+     */
     void testLoadFile() {
         ApiClient.instance().getDownloadDelegate().downloadAsyn("http://file.ynet.com/2/1509/24/10405301-500.jpg", "/mnt/sdcard/ARAF/",
                 new OkHttpClientManager.ResultCallback<String>() {
@@ -154,7 +154,11 @@ public class LoginActivity extends AppCompatActivity {
                 });
     }
 
-
+    /**
+     * 数据库操作样例
+     *
+     * @param list
+     */
     void printTopics(List<Topic> list) {
         for (Topic tp : list) {
             Log.i("TEST", tp.getId() + "--" + tp.getTitle() + "---" + tp.getAuthor_id());
@@ -175,6 +179,9 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * 图片加载样例
+     */
     private void testPicasso() {
         ImageView imageView = new ImageView(this);
         String url = "";
@@ -256,16 +263,10 @@ public class LoginActivity extends AppCompatActivity {
     void login(String email, String password) {
         Call<User> user = ApiClient.instance().loadService(UserApi.class).login(email, password);
         try {
-            Response<User> res = user.execute();
-            User u = res.body();
-            if (u == null) {
-//                ToastUtils.showToastInThread(getBaseContext(), res.raw().message());
-                afterlogin(res.raw().message());
-            } else {
-                afterlogin(null);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
+            User u = ApiClient.instance().getData(user);
+            afterlogin(u.getEmail());
+        } catch (HttpException e) {
+            afterlogin(e.getMessage());
         }
     }
 

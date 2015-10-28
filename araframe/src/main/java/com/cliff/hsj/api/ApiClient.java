@@ -3,8 +3,13 @@ package com.cliff.hsj.api;
 import android.util.Log;
 
 import com.cliff.hsj.api.common.GsonConverterFactory;
+import com.cliff.hsj.exception.HttpException;
 
+import java.io.IOException;
+
+import retrofit.Call;
 import retrofit.Converter;
+import retrofit.Response;
 import retrofit.Retrofit;
 
 /**
@@ -93,5 +98,27 @@ public class ApiClient {
      */
     public OkHttpClientManager.DownloadDelegate getDownloadDelegate() {
         return OkHttpClientManager.getDownloadDelegate();
+    }
+
+    /**
+     * 分析Retrofit返回结果
+     *
+     * @param result
+     * @param <T>
+     * @return
+     * @throws HttpException
+     */
+    public <T> T getData(Call<T> result) throws HttpException {
+        if (result == null)
+            throw new HttpException("result is NULL");
+        try {
+            Response<T> response = result.execute();
+            if (response.isSuccess())
+                return response.body();
+            else
+                throw new HttpException(response.message());
+        } catch (IOException e) {
+            throw new HttpException("response Io exception");
+        }
     }
 }

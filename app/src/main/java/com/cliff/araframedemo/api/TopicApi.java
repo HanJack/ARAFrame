@@ -4,6 +4,7 @@ import com.cliff.araframedemo.api.entity.TopicDetialResult;
 import com.cliff.araframedemo.api.entity.TopicListResult;
 
 import retrofit.Call;
+import retrofit.Callback;
 import retrofit.http.GET;
 import retrofit.http.Path;
 import retrofit.http.Query;
