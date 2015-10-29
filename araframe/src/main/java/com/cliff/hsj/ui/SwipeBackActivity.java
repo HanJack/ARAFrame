@@ -3,6 +3,7 @@ package com.cliff.hsj.ui;
 import android.os.Bundle;
 
 import com.cliff.hsj.ui.widget.swipeback.SwipeBackHelper;
+import com.cliff.hsj.ui.widget.swipeback.ViewDragHelper;
 
 /**
  * Created by jack on 15/10/29.
@@ -17,7 +18,7 @@ public class SwipeBackActivity extends BaseActivity {
 
         SwipeBackHelper.getCurrentPage(this)
                 .setSwipeBackEnable(true)
-                .setSwipeEdgePercent(0.5f)
+                .setSwipeEdgePercent(0.2f)
                 .setSwipeSensitivity(0.5f)
                 .setClosePercent(0.5f)
                 .setSwipeRelateEnable(true).setSwipeSensitivity(1);

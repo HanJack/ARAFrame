@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import com.cliff.araframedemo.R;
 import com.cliff.araframedemo.ui.swiple.adapter.TestAdapter;
 import com.cliff.hsj.ui.SwipeBackActivity;
+import com.cliff.hsj.ui.widget.swipeback.SwipeBackHelper;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -31,7 +32,22 @@ public class ViewPagerActivity extends SwipeBackActivity {
 
         TestAdapter adapter = new TestAdapter(getSupportFragmentManager());
         viewPager.setAdapter(adapter);
+        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                SwipeBackHelper.getCurrentPage(ViewPagerActivity.this).setSwipeBackEnable(position == 0);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
 }
