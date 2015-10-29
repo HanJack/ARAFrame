@@ -1,7 +1,6 @@
 package com.cliff.araframedemo.ui.swiple;
 
 import android.graphics.Color;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,8 +9,7 @@ import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.cliff.araframedemo.R;
-import com.cliff.hsj.ui.BaseActivity;
-import com.cliff.hsj.ui.widget.SwipeBackLayout;
+import com.cliff.hsj.ui.SwipeBackActivity;
 
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -22,7 +20,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @EActivity(R.layout.swip_activity_list_view)
-public class ListViewActivity extends BaseActivity {
+public class ListViewActivity extends SwipeBackActivity {
 
     @ViewById(R.id.listview)
     ListView lv;
@@ -30,9 +28,6 @@ public class ListViewActivity extends BaseActivity {
     Toolbar toolbar;
 
     private List<HashMap<String, String>> data;
-
-    @ViewById(R.id.swipeBackLayout)
-    SwipeBackLayout swipeBackLayout;
 
 
     private void initData() {
@@ -50,7 +45,6 @@ public class ListViewActivity extends BaseActivity {
         toolbar.setTitle("activity_list_view");
         toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
-        swipeBackLayout.setDragEdge(SwipeBackLayout.DragEdge.TOP);
 
         SimpleAdapter adapter = new SimpleAdapter(getApplicationContext(),
                 data, R.layout.item_test, new String[]{"title"},

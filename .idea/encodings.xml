@@ -14,6 +14,15 @@
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_guide_intro2.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_guide_intro3.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_guide_intro4.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/java/com/cliff/hsj/ui/widget/swipeback/RelateSlider.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/java/com/cliff/hsj/ui/widget/swipeback/SwipeBackHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/java/com/cliff/hsj/ui/widget/swipeback/SwipeBackLayout.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/java/com/cliff/hsj/ui/widget/swipeback/SwipeBackPage.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/java/com/cliff/hsj/ui/widget/swipeback/SwipeListener.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/java/com/cliff/hsj/ui/widget/swipeback/Utils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/java/com/cliff/hsj/ui/widget/swipeback/ViewDragHelper.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/res/anim/slide_in_right.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/araframe/src/main/res/anim/slide_out_right.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/araframe/src/main/res/drawable/indicator_dot_grey.xml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/araframe/src/main/res/drawable/indicator_dot_white.xml" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />

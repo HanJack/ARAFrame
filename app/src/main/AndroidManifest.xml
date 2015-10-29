@@ -79,14 +79,14 @@
         </activity>
         <activity android:name=".ui.LoginActivity_" />
         <activity android:name=".ui.welcome.Welcome_Guide" />
-        <activity android:name=".ui.main.activity.MainActivity_"/>
-        <activity android:name=".ui.main.activity.RepliesActivity_"/>
-        <activity android:name=".ui.main.activity.TopicDetailsActivity_"/>
-        <activity android:name=".ui.main.activity.ImageShowActivity_"/>
-        <activity android:name=".ui.swiple.MainActivity_"/>
-        <activity android:name=".ui.swiple.CommonActivity_"/>
-        <activity android:name=".ui.swiple.ListViewActivity_"/>
-        <activity android:name=".ui.swiple.ViewPagerActivity_"/>
+        <activity android:name=".ui.main.activity.MainActivity_" />
+        <activity android:name=".ui.main.activity.RepliesActivity_" />
+        <activity android:name=".ui.main.activity.TopicDetailsActivity_" />
+        <activity android:name=".ui.main.activity.ImageShowActivity_" />
+        <activity android:name=".ui.swiple.MainActivity_" />
+        <activity android:name=".ui.swiple.CommonActivity_" />
+        <activity android:name=".ui.swiple.ListViewActivity_" />
+        <activity android:name=".ui.swiple.ViewPagerActivity_" />
     </application>
 
 </manifest>
