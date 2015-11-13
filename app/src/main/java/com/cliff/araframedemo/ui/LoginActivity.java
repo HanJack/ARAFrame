@@ -31,10 +31,12 @@ import com.cliff.araframedemo.api.UserApi;
 import com.cliff.araframedemo.api.entity.TopicListResult;
 import com.cliff.araframedemo.db.Topic;
 import com.cliff.araframedemo.db.User;
+import com.cliff.araframedemo.ui.main.activity.MainActivity;
 import com.cliff.araframedemo.ui.main.activity.MainActivity_;
 import com.cliff.hsj.api.ApiClient;
 import com.cliff.hsj.api.OkHttpClientManager;
 import com.cliff.hsj.exception.HttpException;
+import com.cliff.hsj.utils.AndroidUtils;
 import com.cliff.hsj.utils.LogUtils;
 import com.cliff.hsj.utils.ToastUtils;
 import com.squareup.okhttp.Request;
@@ -122,6 +124,9 @@ public class LoginActivity extends AppCompatActivity {
 
         mEmailView.setText("jack@163.cn");
         mPasswordView.setText("aadfsdfdfs");
+
+        AndroidUtils.showNotify(this, MainActivity_.class, "标题", "提醒测试内容", R.drawable.top_icon, R.drawable.top_icon, 1
+        );
     }
 
     /**

@@ -402,7 +402,7 @@ public class SwipeBackLayout extends FrameLayout {
             final int childWidth = releasedChild.getWidth();
 
             int left = 0, top = 0;
-            //判断释放以后是应该滑到最右边(关闭)，还是最左边（还原）
+            //鍒ゆ柇閲婃斁浠ュ悗鏄簲璇ユ粦鍒版渶鍙宠竟(鍏抽棴)锛岃繕鏄渶宸﹁竟锛堣繕鍘燂級
             left = xvel > 0 || xvel == 0 && mScrollPercent > mScrollThreshold ? childWidth
                     + mShadowLeft.getIntrinsicWidth() + OVERSCROLL_DISTANCE : 0;
 

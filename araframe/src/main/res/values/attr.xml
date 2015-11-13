@@ -28,4 +28,9 @@
         <attr name="shadow_bottom" format="reference" />
     </declare-styleable>
     <attr name="SwipeBackLayoutStyle" format="reference" />
+    <!--通知栏图片样式-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
 </resources>

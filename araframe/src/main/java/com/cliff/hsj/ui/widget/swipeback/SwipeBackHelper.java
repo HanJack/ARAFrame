@@ -5,7 +5,7 @@ import android.app.Activity;
 import java.util.Stack;
 
 /**
- * »¬¶¯µÄÈ«¾Ö¹ÜÀíÀà
+ * æ»‘åŠ¨çš„å…¨å±€ç®¡ç†ç±»
  */
 public class SwipeBackHelper {
 

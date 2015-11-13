@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
@@ -11,7 +12,9 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Toast;
 
 import com.cliff.araframedemo.R;
 import com.cliff.araframedemo.common.Config;
@@ -153,6 +156,11 @@ public class MainActivity extends BaseActivity implements ToolbarManager.OnToolb
         //设置选项卡的默认选择
         mDrawerAdapter.setSelected(mTopicTypeLabel[0]);
         vp.setCurrentItem(0);
+//        Snackbar
+//                .make(dl_navigator, "snaker test", Snackbar.LENGTH_LONG)
+//                .setAction("retry",v -> openTestActivity()).show();
+        mSnackBar.actionText("snaker test").duration(Snackbar.LENGTH_LONG).show();
+//        SnackBar.make(getBaseContext()).actionText("snaker Text").duration(Snackbar.LENGTH_SHORT).show();
     }
 
     /**

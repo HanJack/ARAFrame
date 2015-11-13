@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 /**
  * Created by Mr.Jude on 2015/8/3.
- * Ã¿¸ö»¬¶¯Ò³ÃæµÄ¹ÜÀí
+ * æ¯ä¸ªæ»‘åŠ¨é¡µé¢çš„ç®¡ç†
  */
 public class SwipeBackPage {
     Activity mActivity;
