@@ -1,20 +1,25 @@
-#ARAFrame ÊÇÒ»¸ö¿ìËÙµÄ¼ò½éµÄandroid native app¿ª·¢¿ò¼Ü¡£
+#ARAFrame æ˜¯ä¸€ä¸ªå¿«é€Ÿçš„ç®€ä»‹çš„android native appå¼€å‘æ¡†æ¶ã€‚
 
 
 
 
-ÒÑÒıÓÃµÚÈı·½¿â½éÉÜ:
+å·²å¼•ç”¨ç¬¬ä¸‰æ–¹åº“ä»‹ç»:
 1,okHttp  HTTP is the way modern applications network.
-    It¡¯s how we exchange data & media. Doing HTTP efficiently makes your stuff load faster and saves bandwidth
-2,retrofit   RetrofitºÍJavaÁìÓòµÄORM¸ÅÄîÀàËÆ£¬ ORM°Ñ½á¹¹»¯Êı¾İ×ª»»ÎªJava¶ÔÏó£¬
-    ¶øRetrofit °ÑREST API·µ»ØµÄÊı¾İ×ª»¯ÎªJava¶ÔÏó·½±ã²Ù×÷¡£Í¬Ê±»¹·â×°ÁËÍøÂç´úÂëµÄµ÷ÓÃ¡£
-3,ActiveAndroidËãÊÇÒ»¸öÇáÁ¿¼¶µÄORM¿ò¼Ü,¼òµ¥µØÍ¨¹ıÈçsave()ºÍdelete()µÈ·½·¨À´×öµ½ÔöÉ¾¸Ä²éµÈ²Ù×÷¡£
+    Itâ€™s how we exchange data & media. Doing HTTP efficiently makes your stuff load faster and saves bandwidth
+2,retrofit   Retrofitå’ŒJavaé¢†åŸŸçš„ORMæ¦‚å¿µç±»ä¼¼ï¼Œ ORMæŠŠç»“æ„åŒ–æ•°æ®è½¬æ¢ä¸ºJavaå¯¹è±¡ï¼Œ
+    è€ŒRetrofit æŠŠREST APIè¿”å›çš„æ•°æ®è½¬åŒ–ä¸ºJavaå¯¹è±¡æ–¹ä¾¿æ“ä½œã€‚åŒæ—¶è¿˜å°è£…äº†ç½‘ç»œä»£ç çš„è°ƒç”¨ã€‚
+3,ActiveAndroidç®—æ˜¯ä¸€ä¸ªè½»é‡çº§çš„ORMæ¡†æ¶,ç®€å•åœ°é€šè¿‡å¦‚save()å’Œdelete()ç­‰æ–¹æ³•æ¥åšåˆ°å¢åˆ æ”¹æŸ¥ç­‰æ“ä½œã€‚
 
-4,AndroidAnnotations Android Annotations ÊÇÒ»¸ö¿ªÔ´µÄ¿ò¼Ü£¬ÓÃÓÚ¼ÓËÙ Android Ó¦ÓÃµÄ¿ª·¢£¬¿ÉÒÔÈÃÄã°ÑÖØµã·ÅÔÚ¹¦ÄÜµÄÊµÏÖÉÏ£¬¼ò»¯ÁË´úÂë£¬ÌáÉıÁË¿ÉÎ¬»¤ĞÔ.
+4,AndroidAnnotations Android Annotations æ˜¯ä¸€ä¸ªå¼€æºçš„æ¡†æ¶ï¼Œç”¨äºåŠ é€Ÿ Android åº”ç”¨çš„å¼€å‘ï¼Œå¯ä»¥è®©ä½ æŠŠé‡ç‚¹æ”¾åœ¨åŠŸèƒ½çš„å®ç°ä¸Šï¼Œç®€åŒ–äº†ä»£ç ï¼Œæå‡äº†å¯ç»´æŠ¤æ€§.
 
 5,Picasso A powerful image downloading and caching library for Android
 
-¼ÌĞøÒª¼¯³ÉµÄÏîÄ¿£º
+ç»§ç»­è¦é›†æˆçš„é¡¹ç›®ï¼š
 //android-saripaar    UI form validation library for Android
-//Robolectric  ÊÇÒ»¿îAndroidµ¥Ôª²âÊÔ¿ò¼Ü£¬ÔÊĞíµ¥Ôª²âÊÔÖ±½ÓÔËĞĞÓÚJVMÖ®ÉÏµÄµ¥Ôª²âÊÔ¿ò¼Ü,ÎŞĞèÕæ»ú»òÄ£ÄâÆ÷,Òò´Ë´ó´ó¼Ó¿ìÁËÔËĞĞËÙ¶È¡£
-//JaCoCo ²å¼şÍ¨¹ı¼¯³ÉJaCoCoÎª Java ´úÂëÌá¹©ÁË´úÂë¸²¸ÇÂÊÖ¸±ê¡£
+//Robolectric  æ˜¯ä¸€æ¬¾Androidå•å…ƒæµ‹è¯•æ¡†æ¶ï¼Œå…è®¸å•å…ƒæµ‹è¯•ç›´æ¥è¿è¡ŒäºJVMä¹‹ä¸Šçš„å•å…ƒæµ‹è¯•æ¡†æ¶,æ— éœ€çœŸæœºæˆ–æ¨¡æ‹Ÿå™¨,å› æ­¤å¤§å¤§åŠ å¿«äº†è¿è¡Œé€Ÿåº¦ã€‚
+//JaCoCo æ’ä»¶é€šè¿‡é›†æˆJaCoCoä¸º Java ä»£ç æä¾›äº†ä»£ç è¦†ç›–ç‡æŒ‡æ ‡ã€‚
+
+
+
+![è¾“å…¥å›¾ç‰‡è¯´æ˜](http://git.oschina.net/uploads/qrcode/qrcode_wechat_1466562087564631.png "å¾®ä¿¡")
+![è¾“å…¥å›¾ç‰‡è¯´æ˜](http://git.oschina.net/uploads/qrcode/qrcode_alipay_1466562103564631.png "æ”¯ä»˜å®")
