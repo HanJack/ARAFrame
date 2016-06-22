@@ -17,6 +17,7 @@
 5,Picasso A powerful image downloading and caching library for Android
 
 继续要集成的项目：
+
 //android-saripaar    UI form validation library for Android
 //Robolectric  是一款Android单元测试框架，允许单元测试直接运行于JVM之上的单元测试框架,无需真机或模拟器,因此大大加快了运行速度。
 //JaCoCo 插件通过集成JaCoCo为 Java 代码提供了代码覆盖率指标。
@@ -25,5 +26,18 @@
 如果您觉得我封装的框架对您有所帮助的话，我将非常荣幸！
 您也可以通过支付宝或者微信来进行捐赠支持我，我将有更大动力继续完善更新我的框架！
 
+微信：
+
 ![输入图片说明](http://git.oschina.net/uploads/qrcode/qrcode_wechat_1466562087564631.png "微信")
+
+支付宝：
+
 ![输入图片说明](http://git.oschina.net/uploads/qrcode/qrcode_alipay_1466562103564631.png "支付宝")
+
+ **联系方式：** 
+
+QQ:406279163
+
+微信：hanshaojie002
+
+email:hanshaojie555@163.com
